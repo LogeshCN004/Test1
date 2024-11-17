@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d45757;
+    color: #0f0e0e;
+}
+
+header {
+    background-color:#000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 1;
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Section Styling */
+.merchandise-section {
+    padding: 30px;
+    margin: 35px auto;
+    background-color: #3d702a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 1000px;
+}
+
+/* Merchandise Container */
+.merchandise-container {
+    display:inline-flex;
+    flex-wrap:inherit;
+    justify-content:center;
+    gap: 18px;
+}
+
+/* Merchandise Item */
+.merchandise-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 10px);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.merchandise-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.merchandise-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.price {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .merchandise-item {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .merchandise-item {
+        width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+}
